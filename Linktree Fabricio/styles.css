@@ -1,0 +1,154 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #8c6ce4, #1a1618, #5486dd);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #e0e0e0;
+}
+
+.linktree-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.158);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 24px;
+    object-fit: cover;      
+    max-width: 120px;       
+    max-height: 120px;      
+    transform: scale(1.3);
+}
+
+.usuario {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.redesSociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+.trabajos {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    background: linear-gradient(135deg, #5486dd);
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+}
+
+.link:hover {
+    background: linear-gradient(135deg, #8c6ce4, #5486dd);
+    transform: translateY(-3px);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 14px;
+    color: #e0e0e0;
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .linktree-container {
+        padding: 15px;
+        max-width: 98%;
+    }
+
+    .foto-perfil {
+        width: 80px;
+        height: 80px;
+    }
+
+    .usuario {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .link {
+        font-size: 16px;
+        padding: 10px 10px;
+    }
+
+    .icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .linktree-container {
+        padding: 8px;
+        max-width: 100%;
+    }
+
+    .foto-perfil {
+        width: 60px;
+        height: 60px;
+    }
+
+    .usuario {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    .link {
+        font-size: 14px;
+        padding: 8px 5px;
+    }
+
+    .icon {
+        width: 18px;
+        height: 18px;
+    }
+}
